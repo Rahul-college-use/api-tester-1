@@ -17,6 +17,9 @@ mongoose.connect("mongodb+srv://GECJ:gec123@gecj.o4nhqas.mongodb.net/?appName=GE
 
 
 // ================== CRUD ==================
+app.get("/", (req, res) => {
+    res.send("Welcome to the User API");
+});
 
 // ✅ CREATE
 app.post("/api/users", async (req, res) => {
